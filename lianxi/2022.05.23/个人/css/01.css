@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 100%的窗口高度 */
+    height: 100vh;
+    /* 弹性布局 */
+    display: flex;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    /* align-items: center; */
+    /* 渐变背景 */
+    background: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+    /* 指定背景图像的大小 */
+    background-size: 500%;
+    /* 调用执行动画的方法 */
+    /* 指定动画的方法：动画名 时长 线性的 无限次 */
+    animation: a 15s linear infinite;
+
+
+}
+ul{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #fff;
+}
+a:active{
+    color: black;
+}
+
+.a {
+    color: #fff;
+    font-size: 30px;
+    /* 字间距 */
+    letter-spacing: 5px;
+}
+
+/* 定义动画 */
+@keyframes a {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
